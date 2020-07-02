@@ -53,3 +53,33 @@ console.log(validAnagram('qwerty', 'qeyrwt'));
 console.log(validAnagram('iceman', 'cinema'));
 console.log(validAnagram('texttwisttime', 'timetwisttext'));
 console.log(validAnagram('bing', 'boing'));
+
+function coltsFunction(str1, str2) {
+  if (str1.length !== str2.length) return false;
+
+  let lookup = {};
+
+  for (let val in str1) {
+    let letter = str1[val];
+    lookup[letter] ? (lookup[letter] += 1) : (lookup[letter] = 1);
+  }
+
+  for (let val in str2) {
+    let letter = str2[val];
+    if (!lookup[letter]) {
+      return false;
+    } else {
+      lookup[letter] -= 1;
+    }
+  }
+  return true;
+}
+
+console.log("colt's below");
+console.log(coltsFunction('', ''));
+console.log(coltsFunction('aaz', 'zza'));
+console.log(coltsFunction('rat', 'car'));
+console.log(coltsFunction('qwerty', 'qeyrwt'));
+console.log(coltsFunction('iceman', 'cinema'));
+console.log(coltsFunction('texttwisttime', 'timetwisttext'));
+console.log(coltsFunction('bing', 'boing'));
