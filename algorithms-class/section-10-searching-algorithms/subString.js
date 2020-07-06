@@ -6,13 +6,12 @@ function subString(long, short) {
     let nIndex = i;
     for (let j = 0; j < short.length; j++) {
       if (long[nIndex] !== short[j]) {
-        j = short.length;
-      } else if (long[nIndex] === short[j]) {
-        if (j === short.length - 1) {
-          matchCounter++;
-        }
-        nIndex++;
+        break;
       }
+      if (j === short.length - 1) {
+        matchCounter++;
+      }
+      nIndex++;
     }
   }
   return matchCounter;
