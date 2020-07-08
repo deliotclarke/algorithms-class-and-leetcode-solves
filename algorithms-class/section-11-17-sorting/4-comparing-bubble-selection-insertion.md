@@ -7,3 +7,5 @@ Bubble and Insertion sort are great for nearly sorted data.
 Insertion is great for data that is continuously being added to.
 
 Sorting is fundamental.
+
+All of these excel at smaller data sets.
