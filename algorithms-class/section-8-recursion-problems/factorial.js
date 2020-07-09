@@ -3,7 +3,8 @@
  */
 
 function factorial(num) {
-  //base case
+  //base cases
+  if (num < 0) return 0;
   if (num === 0) return 1;
 
   // changing data
