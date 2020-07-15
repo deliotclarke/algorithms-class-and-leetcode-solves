@@ -32,7 +32,7 @@ function insertionSort(arr) {
   for (var i = 1; i < arr.length; i++) {
     var currentVal = arr[i];
     for (var j = i - 1; j >= 0 && arr[j] > currentVal; j--) {
-      // because we know the loop would stop if currentVal was were less than j
+      // because we know the loop would stop if currentVal was less than j
       // we know that we can use the statement below to move our larger value backwards
       // [1, 2, 9, 76, 20] -> if arr[j] = 76, arr[j + 1] is changed from 20 to 76
       // we still have 20 saved as currentVal, being used in our loop and after our loop ends to set the correct index to current value
@@ -45,6 +45,7 @@ function insertionSort(arr) {
     arr[j + 1] = currentVal;
     // arr now equals [1, 2, 9, 20, 76]
   }
+  return arr;
 }
 ```
 
