@@ -28,7 +28,7 @@ You've already worked with many of them unknowingly.
 
 And for help in interviews, but keep in mind, VERY HELPFUL IN THE REAL WORLD
 
-They all excel in different situations.
+They all excel in different situations. (it was a trick question)
 
 #### Examples
 
