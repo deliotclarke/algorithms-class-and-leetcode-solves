@@ -25,9 +25,9 @@ class SinglyLinkedList {
       this.tail = newGuy;
     } else {
       // otherwise set the new node's next property to be the current head property on the list
-      newNode.next = this.head;
+      newGuy.next = this.head;
       // set the head property to be the new node
-      this.head = newNode;
+      this.head = newGuy;
     }
     // increment list by one
     this.length++;
